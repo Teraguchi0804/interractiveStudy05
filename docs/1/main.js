@@ -81,11 +81,18 @@ function update() {
 
     // DOMに反映
     TweenMax.set(o.el, {
-      x:o.x,
-      y:o.y,
-      opacity:scrollP //最初は見えないようにするため
+      x: o.x,
+      y: o.y,
+      opacity: scrollP, //最初は見えないようにするため
+			rotation: scroll * 10,
+      scale: scrollP * 1.0
     });
 
+		// $(o.el).stop().animate({borderRadius: '5' + scrollP + '%'}, 100);
+
+    // if(scrollP >= 1){
+    //
+    // }
   }
 
   window.requestAnimationFrame(update);

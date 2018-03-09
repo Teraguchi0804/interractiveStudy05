@@ -44,6 +44,8 @@ function update() {
   // スクロール進捗率 0 ~ 1
   var scrollP = scroll / ($(document).height() - sh);
 
+
+
   // 全体の背景色
   TweenMax.set($('.mv'), {
     backgroundColor:chroma.mix(0x1b2920, 0xffffff, scrollP).css()
